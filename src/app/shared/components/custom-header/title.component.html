@@ -1,5 +1,9 @@
-<section>
+<section (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()">
     <div class="row">
-        <textarea [(ngModel)]="textVal" rows="1"></textarea>
+        <h1 appContenteditable [(ngModel)]="textVal"></h1>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button *ngIf="isAddButtonVisible" (click)="onAddSection()">Add</button>
     </div>
 </section>

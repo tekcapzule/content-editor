@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent {
-  textVal = "Angular Crash course"
+  textVal = "Angular Crash course";
+  isAddButtonVisible: boolean;
+
+  constructor() {
+
+  }
+
+  onMouseOver() {
+    this.isAddButtonVisible = true;
+  }
+
+  onMouseLeave() {
+    this.isAddButtonVisible = false;
+  }
+
+  onAddSection() {
+    
+  }
+
 }

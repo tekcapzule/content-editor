@@ -8,7 +8,8 @@ body {
   height: 100%;
 }
 body {
-  margin: 0;
+  margin: 100px !important;
+  padding: 100px !important;
   font-family: $primary-font-regular;
   color: #414141;
   -moz-osx-font-smoothing: grayscale;   /* Firefox */
