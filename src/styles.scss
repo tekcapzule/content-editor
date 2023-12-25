@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './assets/styles/common.scss';
+@import './assets/styles/variables.scss';
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: $primary-font-regular;
+  color: #414141;
+  -moz-osx-font-smoothing: grayscale;   /* Firefox */
+  -webkit-font-smoothing: antialiased; /* WebKit  */
+}
+
+.mat-mdc-tab-group.mat-mdc-primary .mat-mdc-ink-bar,
+.mat-mdc-tab-nav-bar.mat-mdc-primary .mat-mdc-ink-bar {
+  background-color: #e7245f !important;
+  height: 4px;
+  // width: auto!important;
+  // min-width: 80px;
+}
+
+.mat-mdc-tab-link {
+  min-width: auto !important;
+  padding: 0 !important;
+  text-align: start !important;
+  justify-content: initial !important;
+  margin-right: 64px;
+  @media only screen and (max-width: 990px) {
+    margin-right: 50px;
+  }
+}
